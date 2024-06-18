@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '22235438'))
 API_HASH = environ.get('API_HASH', 'd061c8a617c91bbb3bca568d32b8e2eb')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6936936676:AAFXyIPqYK9Xey_IcIG1-XYcJR6laRqDNfU")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -44,11 +44,11 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://shanm57874:a9A8f0BTagrsFihY@cluster0.nc7a4sh.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster3")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mplaylink.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1f1da5c9df9a58058w672acw8d8134e203b03426a1')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
